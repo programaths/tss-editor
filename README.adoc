@@ -1,0 +1,29 @@
+== TSS Editor
+
+This is an editor plugin for https://github.com/Level-2/Transphporm[TSS]
+
+== Features
+
+- Implement only the minimum CSS subset
+
+== Reason
+
+The CSS editor do not accept "iterate", "data" and other  https://github.com/Level-2/Transphporm[TSS] specific keywords.
+
+That means that the base CSS editor is quite annoying due to false positive. Also, one need to associate "tss" extension with "css" files type.
+
+== Future
+
+It would be nice to have the following :
+
+- Full compliance with TSS (i.e. includes, data attribute, pseudo elements, ...)
+- Live preview of TSS applied to a template with fake data
+- Helpers able to scan HTML documents for IDs, classes and elements
+
+== Contributions
+
+Anyone is welcome to contribute. If you want to learn more about the used technologies :
+
+- https://github.com/Level-2/Transphporm[TSS]
+- http://www.jetbrains.org/intellij/sdk/docs/tutorials/custom_language_support_tutorial.html[Intellij Plugin dev]
+- https://kotlinlang.org/[Kotlin language]
