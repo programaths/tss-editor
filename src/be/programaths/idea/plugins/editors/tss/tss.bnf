@@ -38,9 +38,13 @@
 
 }
 
-tssFile ::= (rule|COMMENT|CLRF)*
+tssFile ::= (rule|COMMENT)*
 
-rule ::= selector LBRACE dec* CLRF* RBRACE
+rule ::= selector LBRACE dec* RBRACE { pin=1; recoverWhile=recover_end_block }
+
+
+
+private recover_end_block ::= !(selector)
 
 selector ::= (elem | class | id | compound )+ attr_select? ( selector_sep selector )*
 
@@ -48,7 +52,9 @@ compound ::= elem? ((DOT|POUND) id)+
 
 dec ::= content COLON compound_data SEMI
         | repeat COLON data_ref SEMI
-        | display COLON none SEMI
+        | display COLON none SEMI {pin=1;recoverWhile=recover_end_dec}
+
+private recover_end_dec ::= !(dec|SEMI|RBRACE|selector)
 
 private compound_data ::= (data_ref|STRING) (COMA compound_data)?
 

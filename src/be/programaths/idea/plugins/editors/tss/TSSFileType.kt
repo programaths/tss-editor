@@ -15,5 +15,5 @@ object tssFileType: LanguageFileType(tssLanguage) {
 
     override fun getDefaultExtension(): String = EXT
 
-    override fun getDescription(): String = "Permit to edit Templating Style Sheet files used by phptransphorm"
+    override fun getDescription(): String = "TSS"
 }

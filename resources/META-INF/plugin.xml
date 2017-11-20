@@ -27,6 +27,7 @@
     <lang.parserDefinition language="Tss" implementationClass="be.programaths.idea.plugins.editors.tss.TSSParserDefinition" />
     <lang.syntaxHighlighterFactory language="Tss" implementationClass="be.programaths.idea.plugins.editors.tss.TSSSyntaxHighlighterFactory" />
     <colorSettingsPage implementation="be.programaths.idea.plugins.editors.tss.TSSColorSettingsPage" />
+    <completion.contributor language="Tss" implementationClass="be.programaths.idea.plugins.editors.tss.TSSCompletionContributor" />
   </extensions>
 
   <actions>

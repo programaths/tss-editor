@@ -6,7 +6,6 @@ import com.intellij.openapi.options.colors.AttributesDescriptor
 import com.intellij.openapi.options.colors.ColorDescriptor
 import com.intellij.openapi.options.colors.ColorSettingsPage
 import com.intellij.openapi.util.IconLoader
-import com.intellij.util.xml.reflect.CustomDomChildrenDescription
 import javax.swing.Icon
 
 class TSSColorSettingsPage : ColorSettingsPage {
