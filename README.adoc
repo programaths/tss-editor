@@ -5,6 +5,9 @@ This is an editor plugin for https://github.com/Level-2/Transphporm[TSS]
 == Features
 
 - Implement only the minimum CSS subset
+- Class and Id autocomplete from HTML files in projet
+- Element autocompletion (from fixed set)
+- Basic "declaration" autocomplete. (I.e. "repeat")
 
 == Reason
 
